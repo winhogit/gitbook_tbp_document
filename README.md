@@ -15,7 +15,7 @@ description: 取得帶有標記 (tag) 的指標 (pointer) 資料，簡稱：TBP
 
 {% tabs %}
 {% tab title="範例 1" %}
-#### 假設有一指標 `abc`。
+**假設有一指標 `abc`。**
 
 ```php
 TBP('abc');
@@ -23,7 +23,7 @@ TBP('abc');
 {% endtab %}
 
 {% tab title="範例 2" %}
-#### 假設有一指標以變數帶入。
+**假設有一指標以變數帶入。**
 
 ```php
 TBP($pointer);
@@ -31,7 +31,7 @@ TBP($pointer);
 {% endtab %}
 
 {% tab title="範例 3" %}
-#### 假設以商品首頁 url 搜尋。
+**假設以商品首頁 url 搜尋。**
 
 ```php
 TBP('products', true);
@@ -104,7 +104,20 @@ TBP($pointer)->limit(30); // 限制查詢三十筆資料
 
 指定查詢資料的關聯資料，可以輸入一項陣列參數，以下是可以使用的各陣列元素及其意義：
 
-<table><thead><tr><th width="179.8203125">參數</th><th width="170.80859375">意義說明</th><th>範例</th></tr></thead><tbody><tr><td>nested</td><td>分類樹節點資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['nested']);</code></pre></td></tr><tr><td>images</td><td>圖片資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['images']);</code></pre></td></tr><tr><td>attach</td><td>附件資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['attach']);</code></pre></td></tr><tr><td>seo</td><td>SEO 資料關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['seo']);</code></pre></td></tr><tr><td>tag</td><td>標記關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['tag']);</code></pre></td></tr><tr><td>state</td><td>啟用狀態關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['state']);</code></pre></td></tr><tr><td>stock</td><td>庫存關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['stock']);</code></pre></td></tr><tr><td>ship_exclude</td><td>排除的運費規格</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['ship_exclude']);</code></pre></td></tr><tr><td>ship_scale_match</td><td>運費規格關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['ship_scale_match']);</code></pre></td></tr><tr><td>description</td><td>描述資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['description']);</code></pre></td></tr><tr><td>redirect</td><td>重導向</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['redirect']);</code></pre></td></tr><tr><td>finance_clone</td><td>關聯的投資人專區</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['finance_clone']);</code></pre></td></tr><tr><td>lockedModel</td><td>鎖定模式</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['lockedModel']);</code></pre></td></tr></tbody></table>
+<table><thead><tr><th width="159.89453125">參數</th><th width="144.34765625">意義說明</th><th>範例</th></tr></thead><tbody><tr><td>nested</td><td>分類樹節點資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['nested']);
+</code></pre></td></tr><tr><td>images</td><td>圖片資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['images']);
+</code></pre></td></tr><tr><td>attach</td><td>附件資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['attach']);
+</code></pre></td></tr><tr><td>seo</td><td>SEO 資料關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['seo']);
+</code></pre></td></tr><tr><td>tag</td><td>標記關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['tag']);
+</code></pre></td></tr><tr><td>state</td><td>啟用狀態關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['state']);
+</code></pre></td></tr><tr><td>stock</td><td>庫存關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['stock']);
+</code></pre></td></tr><tr><td>ship_exclude</td><td>排除的運費規格</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['ship_exclude']);
+</code></pre></td></tr><tr><td>ship_scale_match</td><td>運費規格關聯</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['ship_scale_match']);
+</code></pre></td></tr><tr><td>description</td><td>描述資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['description']);
+</code></pre></td></tr><tr><td>redirect</td><td>重導向</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['redirect']);
+</code></pre></td></tr><tr><td>finance_clone</td><td>關聯的投資人專區</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['finance_clone']);
+</code></pre></td></tr><tr><td>lockedModel</td><td>鎖定模式</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->populate(['lockedModel']);
+</code></pre></td></tr></tbody></table>
 
 {% hint style="info" %}
 如果沒有使用，一律以 `['images', 'description']` 作為關聯條件。
@@ -122,7 +135,14 @@ TBP($pointer)->limit(30); // 限制查詢三十筆資料
 
 可以輸入一項參數，以下是可以使用的各參數及其意義：
 
-<table><thead><tr><th width="112.18359375">參數</th><th width="299.125">意義說明</th><th>範例</th></tr></thead><tbody><tr><td><code>products</code></td><td>僅取出商品資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('products');</code></pre></td></tr><tr><td><code>news</code></td><td>僅取出最新消息資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('news');</code></pre></td></tr><tr><td><code>message</code></td><td>僅取出訊息管理資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('message');</code></pre></td></tr><tr><td><code>aboutus</code></td><td>僅取出關於我們資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('aboutus');</code></pre></td></tr><tr><td><code>download</code></td><td>僅取出下載檔案資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('download');</code></pre></td></tr><tr><td><code>qa</code></td><td>僅取出常見問題資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('qa');</code></pre></td></tr><tr><td><code>null</code></td><td>取出所有模組資料<br> (<code>null</code> 不是字串，不要用單引號包裹)</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get(null);</code></pre></td></tr></tbody></table>
+<table><thead><tr><th width="112.18359375">參數</th><th width="299.125">意義說明</th><th>範例</th></tr></thead><tbody><tr><td><code>products</code></td><td>僅取出商品資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('products');
+</code></pre></td></tr><tr><td><code>news</code></td><td>僅取出最新消息資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('news');
+</code></pre></td></tr><tr><td><code>message</code></td><td>僅取出訊息管理資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('message');
+</code></pre></td></tr><tr><td><code>aboutus</code></td><td>僅取出關於我們資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('aboutus');
+</code></pre></td></tr><tr><td><code>download</code></td><td>僅取出下載檔案資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('download');
+</code></pre></td></tr><tr><td><code>qa</code></td><td>僅取出常見問題資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get('qa');
+</code></pre></td></tr><tr><td><code>null</code></td><td>取出所有模組資料<br>(<code>null</code> 不是字串，不要用單引號包裹)</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->get(null);
+</code></pre></td></tr></tbody></table>
 
 {% hint style="info" %}
 如果沒有填寫參數，預設查詢訊息管理資料：`message`。
