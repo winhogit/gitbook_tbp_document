@@ -71,7 +71,7 @@ TBP('products', true);
 </code></pre></td></tr></tbody></table>
 
 {% hint style="info" %}
-如果沒有使用，則不限制查詢資料
+如果沒有使用，則不限制查詢資料。
 {% endhint %}
 
 #### 函式可以多個串聯，範例：
