@@ -59,6 +59,25 @@ TBP('products', true);
 
 ***
 
+### 函式 `tag()`
+
+指定查詢的標記，可以輸入一項參數，以下是可以使用的各參數及其意義：
+
+<table><thead><tr><th width="141.73828125">參數</th><th width="206.53125">意義說明</th><th>範例</th></tr></thead><tbody><tr><td><code>new</code></td><td>最新</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->tag('new');
+</code></pre></td></tr><tr><td><code>hot</code></td><td>熱門</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->tag('hot');
+</code></pre></td></tr><tr><td><code>sale</code></td><td>促銷</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->tag('sale');
+</code></pre></td></tr><tr><td><code>custom1</code></td><td>自訂 1</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->tag('custom1');
+</code></pre></td></tr><tr><td><code>custom2</code></td><td>自訂 2</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->tag('custom2');
+</code></pre></td></tr></tbody></table>
+
+#### 函式可以多個串聯，範例：
+
+```php
+TBP($pointer)->tag('new')->tag('sale')->get();
+```
+
+***
+
 ### 函式 `sort()`
 
 指定查詢的排序，可以輸入一項參數，以下是可以使用的各參數及其意義：
