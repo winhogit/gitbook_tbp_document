@@ -70,6 +70,10 @@ TBP('products', true);
 </code></pre></td></tr><tr><td><code>custom2</code></td><td>自訂 2</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->tag('custom2');
 </code></pre></td></tr></tbody></table>
 
+{% hint style="info" %}
+如果沒有使用，則不限制查詢資料
+{% endhint %}
+
 #### 函式可以多個串聯，範例：
 
 ```php
