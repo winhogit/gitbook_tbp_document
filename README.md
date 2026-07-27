@@ -45,10 +45,14 @@ TBP('products', true);
 
 指定查詢條件，可以輸入一項參數，以下是可以使用的各參數及其意義：
 
-<table><thead><tr><th width="141.73828125">參數</th><th width="206.53125">意義說明</th><th>範例</th></tr></thead><tbody><tr><td><code>children</code></td><td>搜尋指定指標子層資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('children');
+<table><thead><tr><th width="140.32421875">參數</th><th width="257.08203125">意義說明</th><th>範例</th></tr></thead><tbody><tr><td><code>children</code></td><td>搜尋指定指標子層資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('children');
+</code></pre></td></tr><tr><td><code>children_cate</code></td><td>搜尋指定指標子層分類資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('children_cate');
 </code></pre></td></tr><tr><td><code>descendants</code></td><td>搜尋指定指標下層資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('descendants');
 </code></pre></td></tr><tr><td><code>parent</code></td><td>搜尋指定指標父層資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('parent');
 </code></pre></td></tr><tr><td><code>ancestors</code></td><td>搜尋指定指標上層資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('ancestors');
+</code></pre></td></tr><tr><td><code>siblings</code></td><td>搜尋指定指標同層其他資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('siblings');
+</code></pre></td></tr><tr><td><code>before</code></td><td>搜尋指定指標同層排序較前資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('before');
+</code></pre></td></tr><tr><td><code>after</code></td><td>搜尋指定指標同層排序較後資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('after');
 </code></pre></td></tr><tr><td><code>leaf</code></td><td>搜尋指定指標底層資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('leaf');
 </code></pre></td></tr><tr><td><code>self</code></td><td>搜尋指定指標資料</td><td><pre class="language-php"><code class="lang-php">TBP($pointer)->find('self');
 </code></pre></td></tr></tbody></table>
