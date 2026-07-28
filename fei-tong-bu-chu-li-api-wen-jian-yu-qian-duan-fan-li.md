@@ -71,7 +71,7 @@ new TBP('products', false)
 
 #### **Props**
 
-<table><thead><tr><th width="121.9296875">Prop</th><th width="124.44921875">型態</th><th>說明</th></tr></thead><tbody><tr><td><code>pointer</code></td><td>string</td><td>起始查詢指標（或 url，見 <code>isUrl</code>）</td></tr><tr><td><code>isUrl</code></td><td>boolean</td><td>是否以 url 查詢</td></tr><tr><td><code>tag</code></td><td>string</td><td>選填，套用於標記查詢（<code>tag('hot')</code> 階段）</td></tr></tbody></table>
+<table><thead><tr><th width="121.9296875">Prop</th><th width="124.44921875">型態</th><th>說明</th></tr></thead><tbody><tr><td><code>pointer</code></td><td>string</td><td>起始查詢指標（或 url，見 <code>isUrl</code>）</td></tr><tr><td><code>isUrl</code></td><td>boolean</td><td>是否以 url 查詢</td></tr><tr><td><code>tag</code></td><td>string</td><td>選填，套用於標記查詢（<code>new</code>、<code>hot</code>、<code>sale</code>、<code>custom1</code>、<code>custom2</code>)</td></tr></tbody></table>
 
 #### **行為**
 
