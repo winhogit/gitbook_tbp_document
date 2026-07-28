@@ -38,13 +38,16 @@
 import TBP from '../../frontend/tbp'
 
 // async await 寫法
-const result = await new TBP('products', false)
-  .find('leaf')
-  .tag('hot')
-  .sort('public_desc')
-  .populate(['images'])
-  .paginate('products', 15, 1)
-// result: { data, current_page, last_page, per_page, total, ... }
+const tbpFunc = async () => {
+  const result = await new TBP('products', false)
+    .find('leaf')
+    .tag('hot')
+    .sort('public_desc')
+    .populate(['images'])
+    .paginate('products', 15, 1)
+  // result: { data, current_page, last_page, per_page, total, ... }
+  // Do something for result...
+}
 
 // then catch 寫法
 new TBP('products', false)
