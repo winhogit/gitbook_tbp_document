@@ -2,7 +2,7 @@
 
 ### API 查詢端點
 
-<table><thead><tr><th width="90.4375">方法</th><th width="151.1328125">路徑</th><th width="253.33203125">Controller</th><th>Service</th></tr></thead><tbody><tr><td>GET</td><td><code>/api/data/tbp</code></td><td><code>FrontController@asyncTagBasedPointer</code></td><td><code>FrontService@asyncTagBasedPointer</code></td></tr></tbody></table>
+<table><thead><tr><th width="98.15234375">方法</th><th width="176.234375">路徑</th><th>Controller</th></tr></thead><tbody><tr><td>GET</td><td><code>/api/data/tbp</code></td><td><code>FrontController@asyncTagBasedPointer</code></td></tr></tbody></table>
 
 路由定義於 `routes/api.php`（`data` 前綴群組內），無需驗證。
 
